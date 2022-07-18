@@ -16,7 +16,8 @@ os.chdir("D:\\workspace\\python\\picture\\")
 cv2.imwrite("graypic.jpg", gray)
 
 # show the image
-cv2.imshow("Result", gray)
+cv2.imshow("Color", img)
+cv2.imshow("Gray", gray)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
