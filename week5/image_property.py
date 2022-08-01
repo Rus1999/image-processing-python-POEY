@@ -17,6 +17,6 @@ print("B: {}, G: {}, R: {}".format(b, g, r))
 # crop [start_row:end_row, start_col:end_col]
 crop_img = img[27:523, 146:664]
 
-cv2.imshow("Result", crop_img)
+cv2.imshow("Result", img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
