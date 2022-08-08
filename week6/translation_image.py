@@ -3,7 +3,7 @@ import numpy
 
 img = cv2.imread("D:\\workspace\\python\\week6\\img\\short.jpg")
 
-# transaltion matrix
+# translation matrix
 # [x], [y]
 M = numpy.float32([[1, 0, -200], [0, 1, -200]])
 h, w = img.shape[:2]
