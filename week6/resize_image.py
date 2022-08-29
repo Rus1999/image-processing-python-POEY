@@ -1,7 +1,7 @@
 import cv2
 import os
 
-img = cv2.imread("D:\\workspace\\python\\week6\\img\\roi.jpg")
+img = cv2.imread("D:\\workspace\\python\\week6\\img\\roi.jpg", 0)
 
 print("Original Dimensions : ", img.shape)
 
@@ -13,7 +13,7 @@ width = int(img.shape[1] * 3)
 dim = (width, height)
 resized = cv2.resize(img, dim)
 
-print("Resized Dimensions : ", resized.shape)
+print("Resized Dimensions : ", resized[0, 0])
 
 os.chdir("D:\\workspace\\python\\week6\\img")
 cv2.imwrite("resized.jpg", resized)

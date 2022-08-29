@@ -57,6 +57,8 @@ rectangle_endPoint = (300, 450)
 
 draw_canvas = cv2.rectangle(canvas, rectangle_startPoint, rectangle_endPoint, color, thickness-8)
 
+
+
 # triangle
 p1 = (250, 150)
 p2 = (200, 220)

@@ -82,6 +82,9 @@ canvasDraw = cv2.rectangle(canvasDraw, (305, 275), (307, 305), (40, 40, 40), -1)
 canvasDraw = cv2.putText(canvasDraw, 'Rus07', coordinate, font, fontScale, (0, 0, 0), thickness+2)
 canvasDraw = cv2.putText(canvasDraw, 'Rus07', coordinate, font, fontScale, color, thickness)
 
+canvasDraw = cv2.circle(canvasDraw, (50,50), 40, (0,0,255), -1)
+canvasDraw = cv2.circle(canvasDraw, (50,50), 20, (255,0,0), 3)
+
 cv2.imshow("WoW Zaa!!!", canvasDraw)
 
 os.chdir("D:\\workspace\\python\\week5\\img\\")

@@ -8,7 +8,7 @@ h, w = img.shape[:2]
 print("Height: ", h, ", Width: ", w)
 
 # startRow: endRow, starCol: endCol
-roi = img[325:1000, 125:625]
+roi = img[325:500, 125:625]
 
 cv2.imshow("WoW Zaa!!", roi)
 cv2.waitKey(0)
