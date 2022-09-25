@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("D:/workspace/python/week13/image/rose.jpg")
+img = cv2.imread("D:/workspace/python/week13/image/LINE_ALBUM_ดูงาน Huawei_220922.jpg", 1)
 
 edgeFalse = cv2.Canny(img, 77, 350)
 # edgeTrue = cv2.Canny(img, 50, 150, True)
