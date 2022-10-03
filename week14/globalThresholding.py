@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 ogImg = cv2.imread("R://workspace//image-processing-python-POEY//week14//images//text.jpg", 0)
 
 # histogram
-plt.hist(ogImg.ravel(), 256, [0, 254])
-plt.show()
+# plt.hist(ogImg.ravel(), 256, [0, 254])
+# plt.show()
 
 # cv2.threshold(src, thresh, maxval, type)
 
@@ -30,8 +30,8 @@ plt.show()
 # THRESH_TOZERO
 # dst(x,y) =    {src(x,y)   if src(x,y) > thresh
 #               {0          otherwise
-# ret, thresh_tozero = cv2.threshold(ogImg, 200, 0, cv2.THRESH_TOZERO)
-# cv2.imshow("output", thresh_tozero)
+ret, thresh_tozero = cv2.threshold(ogImg, 200, 0, cv2.THRESH_TOZERO)
+cv2.imshow("output", thresh_tozero)
 
 # THRESH_TOZERO_INV
 # dst(x,y) =    {0             if src(x,y) > thresh
@@ -39,6 +39,8 @@ plt.show()
 # ret, thresh_tozero_inv = cv2.threshold(ogImg, 200, 0, cv2.THRESH_TOZERO_INV)
 # cv2.imshow("output", thresh_tozero_inv)
 
+# computer vision(0-20), image processing(130-180), background(230-250)
+cv2.imwrite("R://workspace//image-processing-python-POEY//week14//images//text_result.jpg", thresh_tozero)
 cv2.imshow("OG", ogImg)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
