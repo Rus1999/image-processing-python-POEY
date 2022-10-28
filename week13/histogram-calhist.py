@@ -1,7 +1,7 @@
 import cv2
 import matplotlib.pyplot as plt
 
-img = cv2.imread("D:/workspace/python/week12/images/sea.png", 1)
+img = cv2.imread("R:/workspace/image-processing-python-POEY/week12/images/sea.png", 1)
 
 
 hist0 = cv2.calcHist([img], [0], None, [256], [0, 256])

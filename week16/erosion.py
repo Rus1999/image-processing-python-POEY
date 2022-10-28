@@ -9,5 +9,6 @@ erosion = cv2.erode(ogImg, kernel, iterations=1)
 
 cv2.imshow("OG", ogImg)
 cv2.imshow("erosion", erosion)
+cv2.imwrite("R://workspace//image-processing-python-POEY//week16//images//erosion.png", erosion)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

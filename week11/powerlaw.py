@@ -1,7 +1,7 @@
 import cv2
 import numpy
 
-img = cv2.imread("D://workspace//python//week11//pic-20220905//goku.png")
+img = cv2.imread("R:/workspace/image-processing-python-POEY/week11//pic-20220905//goku.png")
 
 img_gamma1 = numpy.array(255*(img/255)**5, dtype="uint8")
 img_gamma2 = numpy.array(255*(img/255)**0.5, dtype="uint8")

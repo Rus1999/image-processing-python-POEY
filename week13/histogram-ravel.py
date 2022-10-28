@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # img = cv2.imread("D:/workspace/python/week13/image/rgbyGradient.jpg", 1)
-img = cv2.imread("D:/workspace/python/week13/image/potato2.JPG", 1)
+img = cv2.imread("R:/workspace/image-processing-python-POEY/week13/image/shape.PNG", 1)
 
 b, g, r = cv2.split(img)
 

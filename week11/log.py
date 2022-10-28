@@ -1,7 +1,7 @@
 import cv2
 import numpy
 
-img = cv2.imread("D://workspace//python//week11//pic-20220905//goku.png", 1)
+img = cv2.imread("R:/workspace/image-processing-python-POEY/week11//pic-20220905//goku.png", 1)
 
 # img_log = (numpy.log(img+1)/(numpy.log(1.0+numpy.max(img))))*255
 c = 255/(numpy.log(1.0+numpy.max(img)))
